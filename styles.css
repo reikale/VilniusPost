@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    /* Fonts */
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
+    --ff-decorative: 'Stick No Bills', sans-serif;
+
+    /* Font weights */
+    --fw-reg: 300;
+    --fw-semi-bold: 400;
+    --fw-bold: 700;
+
+    /* Colors */
+    --clr-bg: rgb(238, 238, 238);
+    --clr-grey: rgb(57, 62, 70);
+    --clr-text: rgb(34, 40, 49);
+    --clr-accent: rgb(255, 211, 105);
+    
+    /* Font sizes */
+    --fs-logo: ;
+    --fs-h1: 36px;
+    --fs-h2: 32px;
+    --fs-h3: 28px;
+    --fs-h4: 24px;
+    --fs-body: 20px;
+
+    /* Line height */
+    --lh-title: 1.2;
+    --lh-body: 1.1;
+
+}
+
+/* General Styles */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: var(--clr-bg);
+    color: var(--clr-text);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+}
+#header{
+    background: var(--clr-grey);
+    display: flex;
+    color: var(--clr-accent);
+    justify-content: space-around;
+    align-items: center;
+}
+#header .logo{
+    font-family: var(--ff-decorative);
+}
+#header .authentication{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 180px;
+}
+#header .authentication .auth-element{
+    display: inline-flex;
+    cursor: pointer;
+}
+#header .authentication .auth-element:hover{
+    color: rgb(248, 196, 73);
+}
+#content{
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+#content .post{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#content .post__title{
+    padding-bottom: 20px auto;
+    line-height: var(--lh-title);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#content .post .post__body{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}
+#content .post p {
+    display: flex;
+    overflow: hidden;
+    max-width: 800px; 
+    margin-bottom: 25px; 
+}
+#content .post .post__image{
+    max-width: 500px;
+    max-height: 500px;
+    margin-bottom: 25px;
+    align-items: center;
+}
